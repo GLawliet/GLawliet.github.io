@@ -1,0 +1,33 @@
+.touxiang{
+            text-align: center;
+            width: 100%;
+            margin-top:150px;
+        }
+        
+        .headphoto{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.3s ease; /* 所有样式变化都加0.3秒渐变动画 */
+            transform: scale(1); /* 初始缩放比例1（原始大小） */
+            box-sizing: border-box; /* 确保边框宽度不影响头像整体尺寸 */
+            border-color:white; /* 显式声明初始边框色，过渡更稳定 */
+        }
+        .headphoto:hover {
+        transform: scale(1.05); /* 放大到1.05倍（轻微放大，可自定义） */
+        border: 2px solid blue; /* 边框变成红色（也可自定义颜色值，比如#ff0000） */
+        }
+
+        .custom-tooltip {
+            position: absolute;
+            padding: 5px 10px;
+            background: #333;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 4px;
+            pointer-events: none; 
+            z-index: 9999;
+            display: none; 
+        }
