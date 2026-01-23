@@ -1,0 +1,26 @@
+/* 社交按钮容器，用来控制间距 */
+.Socialnet {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* 这里可以自定义调整按钮之间的间距 */
+  margin-top: 80px;
+}
+
+/* 按钮基础样式 */
+.social-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 20px; /* 圆角大小 */
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* 鼠标悬停时的效果 */
+.social-btn:hover {
+  background-color: #44cdf7;
+  color: black;
+  transform: scale(1.05); /* 放大一点点 */
+}

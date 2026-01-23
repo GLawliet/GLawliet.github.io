@@ -1,0 +1,66 @@
+/* 图标模块容器：控制整体布局和间距 */
+.IconModule {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* 图标之间的横向间距 */
+  margin-top: 30px; /* 与上方文字按钮的距离 */
+  margin-bottom: 20px; /* 与下方内容的距离 */
+}
+
+/* 单个图标容器样式 */
+.icon-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; /* 图标点击区域大小 */
+  height: 36px;
+  border-radius: 8px; /* 圆角效果 */
+  transition: all 0.3s ease; /* 悬停过渡动画，更丝滑 */
+  color: #fff; /* 图标默认白色 */
+  /* 取消透明背景，改为各图标对应的品牌色（后续逐个设置） */
+}
+
+/* 逐个设置各图标的默认品牌色背景+白色图标 */
+/* 1.B站 - 粉色背景 */
+.icon-item:nth-child(1) { 
+  background-color: #fb7299; 
+  color: #fff;
+}
+/* 2.知乎 - 蓝色背景 */
+.icon-item:nth-child(2) { 
+  background-color: #0e88eb; 
+  color: #fff;
+}
+/* 3.Github - 黄色背景 */
+.icon-item:nth-child(3) { 
+  background-color: yellow; 
+  color: #fff;
+}
+/* 4.QQ - 绿色背景 */
+.icon-item:nth-child(4) { 
+  background-color: #0ae160; 
+  color: #fff;
+}
+
+/* 所有SVG图标统一样式 */
+.icon-img {
+  width: 28px; /* 图标本身大小 */
+  height: 28px;
+  object-fit: contain;
+  fill: currentColor !important; /* 强制SVG继承父元素颜色 */
+  stroke: currentColor !important;
+  filter: none !important; /* 清除滤镜干扰 */
+}
+
+/* 图标悬停仅保留放大效果（背景色已默认显示） */
+.icon-item:hover {
+  transform: scale(1.1); /* 悬停放大10% */
+}
+
+/* （可选）浅色背景适配类 */
+.light-bg .icon-item {
+  color: #333; /* 浅色背景下默认深色图标 */
+}
+.light-bg .icon-item:hover {
+  color: #fff;
+}

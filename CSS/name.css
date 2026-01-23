@@ -1,0 +1,45 @@
+        /* 核心修复：禁止页面滚动 */
+        html, body {
+            height: 100%; /* 让html/body高度等于视口高度 */
+            margin: 0;    /* 去掉默认边距 */
+            padding: 0;   /* 去掉默认内边距 */
+            overflow: hidden; /* 隐藏溢出内容，禁止滚动 */
+        }
+        .ID{
+            text-align: center; /* 文字容器居中 */
+            margin-top: 10px; /* 文字离头像的距离（替换原来的250px，避免离太远） */
+            width: 100%; /* 容器占满宽度，保证居中生效 */
+            height: auto; /* 取消固定高度，自适应文字 */
+            position: relative;
+        }
+        /* 文字样式：自定义字体大小，可选加颜色等 */
+        .ID a {
+            /* 去掉下划线 */
+            text-decoration: none; 
+            /* 继承父元素颜色，取消默认紫色 */
+            color: inherit; 
+            /* 让链接和文字对齐 */
+            display: inline-block;
+        }
+        .name {
+            font-family: 'Great Vibes', cursive; /* 手写签名字体 */
+            font-size: 50px; /* 字体大小，可自行调整（比如18px/24px） */
+            margin: 0; /* 去掉p标签默认的上下边距，避免多余间距 */
+            color: rgb(200, 200, 200); /* 字体颜色，可选 */
+            font-weight: 250; /*字体粗细*/
+            letter-spacing: 2px; /* 字母间距，可选调整更像手写 */
+        }
+        .ID::after {
+            content: ''; /* 伪元素必须有content，空值即可 */
+            /* 定位：在文字下方20px处居中 */
+            position: absolute;
+            top: calc(100% + 10px); /* 文字底部+20px的位置 */
+            left: 50%;
+            transform: translateX(-50%); /* 水平居中 */
+            /* 横线样式（可自定义） */
+            width: 800px; /* 横线长度，可改（比如150px/300px） */
+            height: 1px; /* 横线粗细，细横线建议1px */
+            background-color: rgba(200, 200, 200, 0.5); /* 横线颜色，和文字同色更协调 */
+            /* 可选：圆角，让横线两端更柔和 */
+            border-radius: 0.5px;
+        }

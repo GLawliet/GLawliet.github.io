@@ -6,32 +6,66 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="keywords" content="Glawliet">
     <meta name="description" content="Glawliet的主页">
-    <!-- 修改：去掉../GLawliet.github.io/，直接用./表示当前目录 -->
     <link rel="icon" href="./sucaiku/SherlockHolmes.jpg">
     <link rel="stylesheet" href="./CSS/headphoto.css">
     <link rel="stylesheet" href="./CSS/beijing.css">
+    <link rel="stylesheet" href="./CSS/name.css">
+    <link rel="stylesheet" href="./CSS/Saying.css">
+    <link rel="stylesheet" href="./CSS/Socialnet.css">
+    <link rel="stylesheet" href="./CSS/IconModule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="touxiang">
-        <!-- 修改：路径简化为相对当前HTML文件的路径 -->
-        <img src="./sucaiku/SherlockHolmes.jpg" alt="sherlock的头像" class="headphoto" data-title="欢迎来到Glawliet的主页">
+        <a href="https://www.bilibili.com/bangumi/play/ep1420591?spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">
+            <img src="./sucaiku/SherlockHolmes.jpg" alt="sherlock的头像" class="headphoto" data-title="欢迎来到Glawliet的主页">
+        </a>
     </div>
 
     <div class="beijing">
         <div class="beijingswitch">
-            <!-- 第1张背景图：简化路径 -->
             <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/London.png');"></div>
-            <!-- 第2张背景图 -->
+            <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/sherlockone.jpeg');"></div>
+            <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/sherlocktwo.jpg');"></div>
+            <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/sherlockthree.jpg');"></div>
+            <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/Londontwo.jpeg');"></div>
             <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/cheems.jpg');"></div>
-            <!-- 第3张背景图 -->
-            <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/Riven.jpg');"></div>
-            <!-- 第4张背景图 -->
-            <div class="bg-item" style="background-image: url('./sucaiku/beijingsucai/BlueSky.jpg');"></div>
         </div>
     </div>
 
-    <!-- 修改：JS文件路径简化 -->
+    <div class="ID">
+        <a href="https://baike.baidu.com/item/%E5%A4%8F%E6%B4%9B%E5%85%8B%C2%B7%E7%A6%8F%E5%B0%94%E6%91%A9%E6%96%AF/65994" target="_blank" rel="noopener noreferrer"><p class="name">Sherlock.Holmes</p></a>
+    </div>
+
+    <div class="Saying" id="sayingContainer">
+    </div>
+
+    <div class="Socialnet">
+        <a href="https://space.bilibili.com/527092371?spm_id_from=333.1007.0.0" class="social-btn" target="_blank">哔哩哔哩</a>
+        <a href="https://www.zhihu.com/people/88-88-62-7" class="social-btn" target="_blank">知乎</a>
+        <a href="https://github.com/GLawliet" class="social-btn" target="_blank">Github</a>
+        <a href="https://qun.qq.com/universal-share/share?ac=1&authKey=T25tOGlidopQotw6BQS3Fu8ZkIjSzj9aS8MFHftPBlH8jqx%2F9rTaZeTaOFqOXG0%2B&busi_data=eyJncm91cENvZGUiOiIxNjI0MTMxMTgiLCJ0b2tlbiI6Ijg0WmtkYjgyT1J1cGxUc3Q0RkF6MVBYMFVEbURXbGZadU1hbFJRTkVvZVJ2bzFqRnd2eTlXU2JuSTE0cmJsUHEiLCJ1aW4iOiIxODM5Nzg3NjIxIn0%3D&data=MzpY8Bko4_WMhkcM8nDfmD__ieCSLFd02dLu9jDaNz__xB4zrSjPzHyH13TP1CPRtumPuFlMDQ6vKF76nQRPIQ&svctype=4&tempid=h5_group_info" class="social-btn" target="_blank">加入我的QQ群</a>
+    </div>
+
+    <div class="IconModule">
+        <a href="https://space.bilibili.com/527092371?spm_id_from=333.1007.0.0" class="icon-item" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bilibili.svg" class="icon-img" alt="B站图标">
+        </a>        
+        <a href="https://www.zhihu.com/people/88-88-62-7" class="icon-item" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zhihu.svg" class="icon-img" alt="知乎图标">
+        </a>
+        <a href="https://github.com/GLawliet" class="icon-item" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" class="icon-img" alt="Github图标">
+        </a>
+        <a href="https://qun.qq.com/universal-share/share?ac=1&authKey=T25tOGlidopQotw6BQS3Fu8ZkIjSzj9aS8MFHftPBlH8jqx%2F9rTaZeTaOFqOXG0%2B&busi_data=eyJncm91cENvZGUiOiIxNjI0MTMxMTgiLCJ0b2tlbiI6Ijg0WmtkYjgyT1J1cGxUc3Q0RkF6MVBYMFVEbURXbGZadU1hbFJRTkVvZVJ2bzFqRnd2eTlXU2JuSTE0cmJsUHEiLCJ1aW4iOiIxODM5Nzg3NjIxIn0%3D&data=MzpY8Bko4_WMhkcM8nDfmD__ieCSLFd02dLu9jDaNz__xB4zrSjPzHyH13TP1CPRtumPuFlMDQ6vKF76nQRPIQ&svctype=4&tempid=h5_group_info" class="icon-item" target="_blank">
+            <img src="./sucaiku/qqlogo.svg" class="icon-img" alt="QQ群图标">
+        </a>
+    </div>
+
     <script src="./JS/headphoto.js"></script>
+    <script src="./JS/Saying.js"></script>
 
 </body>
 </html>

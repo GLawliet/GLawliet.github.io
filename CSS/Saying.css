@@ -1,0 +1,66 @@
+/* sayings.css - 福尔摩斯名言板块样式（含中英双语） */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 名言板块容器样式 */
+.Saying {
+    text-align: center; /* 文字居中 */
+    margin-top: 25px; /* 距离名字下方30px，可调整 */
+    width: 100%;
+    height: auto;
+    min-height: 80px; /* 调高最小高度，适配中英两行 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* 移动端左右留白 */
+    box-sizing: border-box; /* 避免padding撑大宽度 */
+    position: relative; /* 确保绝对定位的名言不跑偏 */
+}
+
+/* 名言外层容器：渐变动画核心 */
+.saying-item {
+    opacity: 0; /* 默认隐藏 */
+    transition: opacity 1s ease; /* 1秒渐变动画 */
+    position: absolute; /* 所有名言重叠显示 */
+    max-width: 800px; /* 限制最大宽度 */
+}
+
+/* 激活的名言显示 */
+.saying-item.active {
+    opacity: 1; /* 完全显示 */
+}
+
+/* 英文名言样式 */
+.saying-en {
+    font-size: 18px; /* 英文字体大小 */
+    color: rgba(255, 255, 255, 1); 
+    font-style: italic; /* 斜体，增强名言质感 */
+    letter-spacing: 1px; /* 字母间距 */
+    line-height: 1.5; /* 行高 */
+    margin-bottom: 8px; /* 英文和中文之间的间距 */
+}
+
+/* 中文翻译样式 */
+.saying-cn {
+    font-size: 16px; /* 中文比英文稍小，突出英文 */
+    color: rgba(255, 255, 255, 0.9); /* 比英文稍淡 */
+    letter-spacing: 2px; /* 中文字间距 */
+    line-height: 1.4; /* 行高 */
+    font-family: "Microsoft Yahei", sans-serif; /* 适配中文字体 */
+}
+/* 名言区域下方的横线（与上方风格一致） */
+.Saying::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;          /* 距离名言底部20px，可调整 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;           /* 横线长度，与上方一致 */
+    height: 1px;            /* 横线粗细 */
+    background-color: rgba(200, 200, 200, 0.5); /* 与上方同样的淡色 */
+    border-radius: 0.5px;   /* 圆角，与上方一致 */
+}

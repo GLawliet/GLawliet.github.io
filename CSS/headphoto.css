@@ -16,8 +16,8 @@
             border-color:white; /* 显式声明初始边框色，过渡更稳定 */
         }
         .headphoto:hover {
-        transform: scale(1.05); /* 放大到1.05倍（轻微放大，可自定义） */
-        border: 2px solid blue; /* 边框变成红色（也可自定义颜色值，比如#ff0000） */
+        transform: scale(1.10); /* 放大到1.05倍（轻微放大，可自定义） */
+        border: 2px solid blue; /* 边框变成蓝色（也可自定义颜色值，比如#ff0000） */
         }
 
         .custom-tooltip {
